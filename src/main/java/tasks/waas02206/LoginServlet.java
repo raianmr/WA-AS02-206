@@ -42,8 +42,7 @@ public class LoginServlet extends HttpServlet {
         out.println("<h3 align=\"center\"> Successfully logged in </h3>");
 
 
-
-        RequestDispatcher rd = request.getRequestDispatcher("ProductServlet");
+        var rd = request.getRequestDispatcher("ProductServlet");
         rd.include(request, response);
     }
 }
